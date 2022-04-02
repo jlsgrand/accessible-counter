@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="js" lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Application compte à rebours</title>
+    <meta name="description" content="Petite application web simple permettant d'utiliser un compte à rebours">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+<h1>Bienvenue sur la mini application de compte à rebours</h1>
+<p id="timer">00:00</p>
+<button id="start-timer-button">▶ Lancer le compte à rebours</button>
+<button id="stop-timer-button">⏹ Arrêter le compte à rebours</button>
+<form id="timer-form">
+    <fieldset>
+        <legend>Définition du compte à rebours</legend>
+        <div class="form-field">
+            <label for="timer-input-min">Minutes</label>
+            <input type="number" id="timer-input-min" max="59" min="0" step="1">
+        </div>
+        <div class="form-field">
+            <label for="timer-input-sec">Secondes</label>
+            <input type="number" id="timer-input-sec" max="59" min="0" step="1">
+        </div>
+    </fieldset>
+    <button id="set-timer-button">Définir le compter à rebours</button>
+</form>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
